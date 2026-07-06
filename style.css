@@ -891,3 +891,132 @@ h3 {
     transform: scale(0.82);
   }
 }
+/* Tools Section*/
+.tools-section {
+  display: grid;
+  grid-template-columns: 3fr 5fr 3fr;
+  gap: 18px;
+}
+
+.tools-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.tool-card {
+  width: 180px;
+  min-height: 170px;
+  padding: 26px 18px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(89, 240, 215, 0.35);
+  background: #14182d;
+}
+
+.tool-card img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.tool-card span {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .tool-card {
+    width: 160px;
+  }
+}
+
+@media (max-width: 620px) {
+  .tools-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tool-card {
+    width: 100%;
+    min-height: 150px;
+    padding: 22px 14px;
+  }
+
+  .tool-card img {
+    width: 52px;
+    height: 52px;
+  }
+}
+@media (max-width: 620px) {
+  .tools {
+    padding-top: 130px;
+  }
+
+  .tools .section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .tools .section-heading .eyebrow {
+    justify-content: center;
+  }
+
+  .tools .section-heading .eyebrow::before {
+    display: none;
+  }
+
+  .tools .section-heading h2 {
+    font-size: 2.4rem;
+    line-height: 1.05;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tools-rows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px 22px;
+  }
+
+  .tools-row {
+    display: contents;
+  }
+
+  .tool-card {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .tool-card:hover {
+    transform: none;
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .tool-card img {
+    width: 58px;
+    height: 58px;
+    padding: 0;
+    margin-bottom: 14px;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .tool-card span {
+    font-size: 0.95rem;
+  }
+}
