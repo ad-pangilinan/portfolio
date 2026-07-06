@@ -567,6 +567,13 @@ h3 {
 }
 
 /* Projects */
+.section-description{
+    margin-top: 26px;
+    color: var(--muted);
+    font-size: 1.12rem;
+    line-height: 1.8;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
