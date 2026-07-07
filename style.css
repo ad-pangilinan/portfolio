@@ -694,7 +694,6 @@ h3 {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
   padding: 36px 0 50px;
-  border-top: 1px solid var(--line);
   color: var(--muted);
   text-align: center;
 }
@@ -733,7 +732,14 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+.footer {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 36px 0 50px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  text-align: center;
+}
 @media (max-width: 920px) {
   .site-header {
     height: 72px;
